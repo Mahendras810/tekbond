@@ -59,15 +59,7 @@ AddEncoding gzip svgz
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
-  # Remove trailing slash except for directories
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} (.+)/$
-  RewriteRule ^ %1 [R=301,L]
-  # Redirect /india to the appropriate multi-site folder
-  RewriteCond %{REQUEST_URI} ^/india
-  RewriteRule ^(.*)$ /index.php [L]
 
-  
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
