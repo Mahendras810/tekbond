@@ -9,7 +9,7 @@ weight: 0
 stackable: false
 no_patching: false
 storage: folder
-folder: ./sites/tekbondindia.organochems.com.local/config/split_prod
+folder: ./sites/tekbond.com.india/config/split_prod
 module: {  }
 theme: {  }
 complete_list: {  }
