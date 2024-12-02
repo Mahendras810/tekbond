@@ -56,6 +56,7 @@
  * @see https://www.drupal.org/docs/getting-started/multisite-drupal
  */
 
+ $sites['tekbond.com.india'] = 'tekbond.com.india';
  $sites['tekbond.com/india'] = 'tekbond.com.india';
 
 
