@@ -6,7 +6,6 @@ dependencies:
     - commerce_product.commerce_product_attribute.color
     - field.field.commerce_product_attribute_value.color.field_color
   module:
-    - blazy
     - color_field
 id: commerce_product_attribute_value.color.default
 targetEntityType: commerce_product_attribute_value
@@ -26,14 +25,12 @@ content:
     weight: 1
     region: content
   name:
-    type: blazy_title
-    label: hidden
+    type: string
+    label: above
     settings:
-      delimiter: '|'
-      tag: small
-      break: false
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
 hidden:
   langcode: true
